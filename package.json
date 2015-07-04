@@ -28,5 +28,10 @@
   ],
   "scripts": {
     "postinstall": "gulp config"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bcldvd/diablo3-armory.git"
+  },
+  "license": "MIT"
 }

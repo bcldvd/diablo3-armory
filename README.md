@@ -3,6 +3,46 @@ Diablo 3 Armory
 
 Simple mobile Armory for Diablo 3, using Ionic :)
 
+## Getting Started
+
+
+The easiest way to get started is to clone the repository:
+
+```bash
+# Fetch only the latest commits.
+git clone https://github.com/bcldvd/diablo3-armory.git my-project
+
+cd my-project
+
+# Install Ionic & Cordova if you don't have them yet
+npm install -g cordova ionic
+
+# Install NPM & Bower dependencies
+npm install && bower install
+# Choose Angular 1.3.x if asked
+
+# Create a config.json file at the root of your folder with the following :
+{
+  "name": "starter.config",
+  "constants": {
+    "d3Api": {
+      "apiKey": "YOUR_BATTLENET_API_KEY"
+    }
+  }
+}
+
+# Build constant.js file
+gulp config
+
+# Launch your app :)
+ionic serve
+```
+
+>:exclamation: **Note**: I strongly recommend installing nodemon `sudo npm install -g nodemon`.
+>It will monitor for any changes in your node.js
+>application and automatically restart the server. Once installed, instead of `node app.js` use `nodemon app.js`.
+>It is a big time saver in the long run.
+
 
 ## Authors
 
