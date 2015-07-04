@@ -1,6 +1,6 @@
 <ion-view view-title="{{ hero.name }}" ng-controller="HeroCtrl">
   <ion-content>
-      <div class="list card">
+      <div class="list card hero-card">
 
           <div class="item item-avatar">
               <!--<img src="mcfly.jpg">-->
@@ -12,18 +12,25 @@
 
           <div class="item item-body">
 
+              <div class="inventory {{hero.class}}" ng-class="{
+                female: hero.gender == 1,
+                male : hero.gender == 0,
+                hardcore: hero.hardcore}">
+
+              </div>
+
           </div>
 
           <div class="item tabs tabs-secondary tabs-icon-left">
-              <a class="tab-item" href="#">
+              <a class="tab-item" ng-click="like(heroStatistics)">
                   <i class="icon ion-thumbsup"></i>
-                  Like
+                  Like ({{ heroStatistics.likes || 0}})
               </a>
-              <a class="tab-item" href="#">
+              <a class="tab-item">
                   <i class="icon ion-chatbox"></i>
-                  Comment
+                  Comment ({{ heroStatistics.likes || 0 }})
               </a>
-              <a class="tab-item" href="#">
+              <a class="tab-item">
                   <i class="icon ion-share"></i>
                   Share
               </a>

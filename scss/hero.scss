@@ -1,0 +1,84 @@
+.hero-card {
+
+  $classes:
+  crusader,
+  wizard,
+  witch-doctor,
+  barbarian,
+  demon-hunter,
+  monk;
+  $d3Static: 'http://eu.battle.net/d3/static';
+  $parangonLevelFont: #a791c2;
+  $paperdollW: 994px;
+  $paperdollH: 645px;
+
+  /*font: normal 25px/100% "Exocet Blizzard Light","Palatino Linotype", "Times", serif;
+  text-transform: uppercase;*/
+
+  .item-body {
+    text-shadow: 1px 1px 1px #000;
+
+    .inventory {
+      $paperdoll-position-X: -350px;
+      $inventoryW : 300px;
+      $inventory-margin: 130px;
+
+      height: $paperdollH;
+      width: ($paperdollW + $paperdoll-position-X) - (($paperdollW + $paperdoll-position-X)- $inventoryW - ($inventory-margin*2));
+      margin: 0 auto;
+      background-repeat: no-repeat;
+      background-position-x: $paperdoll-position-X;
+
+      @each $class in $classes {
+        &.#{$class} {
+          &.male {
+            background-image: url('#{$d3Static}/images/profile/hero/paperdoll/#{$class}-male.jpg');
+          }
+          &.female {
+            background-image: url('#{$d3Static}/images/profile/hero/paperdoll/#{$class}-female.jpg');
+          }
+        }
+      }
+
+      /*&.monk a {
+        background-position-y: -130px;
+      }
+
+      &.wizard a {
+        background-position-y: -130px;
+      }
+
+      &.demon-hunter a {
+        background-position-y: -130px;
+      }
+
+      &.witch-doctor a {
+        background-position-y: -200px;
+      }*/
+
+      &.hardcore a {
+        color: red;
+      }
+
+      .hero__description {
+        font-family: 'Arial', sans-serif;
+        font-size: 14px;
+        margin-top: -4px;
+
+        .paragon-level {
+          color: $parangonLevelFont;
+        }
+
+        .seasonnal {
+          background: url("#{$d3Static}/images/profile/seasonal-leaf.png") -24px -2px no-repeat;
+          display: inline-block;
+          height: 21px;
+          margin-left: 5px;
+          position: absolute;
+          width: 15px;
+        }
+      }
+
+    }
+  }
+}

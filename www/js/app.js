@@ -10,8 +10,8 @@ angular.module('starter', [
     'starter.config',
     'starter.services',
     'starter.filters',
-    'ngResource',
-    'LocalStorageModule'
+    'LocalStorageModule',
+    'firebase'
 ])
 
     .run(function ($ionicPlatform) {

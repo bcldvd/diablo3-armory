@@ -7758,6 +7758,72 @@ a.button {
       position: absolute;
       width: 15px; }
 
+.hero-card {
+  /*font: normal 25px/100% "Exocet Blizzard Light","Palatino Linotype", "Times", serif;
+  text-transform: uppercase;*/ }
+  .hero-card .item-body {
+    text-shadow: 1px 1px 1px #000; }
+    .hero-card .item-body .inventory {
+      height: 645px;
+      width: 560px;
+      margin: 0 auto;
+      background-repeat: no-repeat;
+      background-position-x: -350px;
+      /*&.monk a {
+        background-position-y: -130px;
+      }
+
+      &.wizard a {
+        background-position-y: -130px;
+      }
+
+      &.demon-hunter a {
+        background-position-y: -130px;
+      }
+
+      &.witch-doctor a {
+        background-position-y: -200px;
+      }*/ }
+      .hero-card .item-body .inventory.crusader.male {
+        background-image: url('http://eu.battle.net/d3/static/images/profile/hero/paperdoll/crusader-male.jpg'); }
+      .hero-card .item-body .inventory.crusader.female {
+        background-image: url('http://eu.battle.net/d3/static/images/profile/hero/paperdoll/crusader-female.jpg'); }
+      .hero-card .item-body .inventory.wizard.male {
+        background-image: url('http://eu.battle.net/d3/static/images/profile/hero/paperdoll/wizard-male.jpg'); }
+      .hero-card .item-body .inventory.wizard.female {
+        background-image: url('http://eu.battle.net/d3/static/images/profile/hero/paperdoll/wizard-female.jpg'); }
+      .hero-card .item-body .inventory.witch-doctor.male {
+        background-image: url('http://eu.battle.net/d3/static/images/profile/hero/paperdoll/witch-doctor-male.jpg'); }
+      .hero-card .item-body .inventory.witch-doctor.female {
+        background-image: url('http://eu.battle.net/d3/static/images/profile/hero/paperdoll/witch-doctor-female.jpg'); }
+      .hero-card .item-body .inventory.barbarian.male {
+        background-image: url('http://eu.battle.net/d3/static/images/profile/hero/paperdoll/barbarian-male.jpg'); }
+      .hero-card .item-body .inventory.barbarian.female {
+        background-image: url('http://eu.battle.net/d3/static/images/profile/hero/paperdoll/barbarian-female.jpg'); }
+      .hero-card .item-body .inventory.demon-hunter.male {
+        background-image: url('http://eu.battle.net/d3/static/images/profile/hero/paperdoll/demon-hunter-male.jpg'); }
+      .hero-card .item-body .inventory.demon-hunter.female {
+        background-image: url('http://eu.battle.net/d3/static/images/profile/hero/paperdoll/demon-hunter-female.jpg'); }
+      .hero-card .item-body .inventory.monk.male {
+        background-image: url('http://eu.battle.net/d3/static/images/profile/hero/paperdoll/monk-male.jpg'); }
+      .hero-card .item-body .inventory.monk.female {
+        background-image: url('http://eu.battle.net/d3/static/images/profile/hero/paperdoll/monk-female.jpg'); }
+      .hero-card .item-body .inventory.hardcore a {
+        color: red; }
+      .hero-card .item-body .inventory .hero__description {
+        font-family: 'Arial', sans-serif;
+        font-size: 14px;
+        margin-top: -4px; }
+        .hero-card .item-body .inventory .hero__description .paragon-level {
+          color: #a791c2; }
+        .hero-card .item-body .inventory .hero__description .seasonnal {
+          background: url("http://eu.battle.net/d3/static/images/profile/seasonal-leaf.png") -24px -2px no-repeat;
+          display: inline-block;
+          height: 21px;
+          margin-left: 5px;
+          position: absolute;
+          width: 15px; }
+
 .search-view form {
   padding: 5%; }
 .search-view input {
