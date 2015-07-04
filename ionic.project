@@ -1,0 +1,12 @@
+{
+  "name": "d3Armory",
+  "app_id": "fe13d2f3",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}

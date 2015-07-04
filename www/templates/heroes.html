@@ -1,0 +1,19 @@
+<ion-view view-title="Heroes">
+    <ion-content>
+        <ion-list class="heroes-list">
+            <ion-item ng-repeat="hero in heroes" href="#/app/profile/{{battleTag}}/hero/{{hero.id}}"
+                      class="hero {{hero.class}}" ng-class="{
+                female: hero.gender == 1,
+                male : hero.gender == 0,
+                hardcore: hero.hardcore}">
+                {{hero.name}}
+                <div class="hero__description">
+                    {{ hero.level }}
+                    <span class="paragon-level"ng-if="hero.paragonLevel">({{ hero.paragonLevel }})</span>
+                    <span class="seasonnal" ng-if="hero.seasonal"></span>
+                </div>
+            </ion-item>
+
+        </ion-list>
+    </ion-content>
+</ion-view>
