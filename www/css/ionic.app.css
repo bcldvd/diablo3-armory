@@ -7758,6 +7758,11 @@ a.button {
       position: absolute;
       width: 15px; }
 
+.search-view form {
+  padding: 5%; }
+.search-view input {
+  font: 25px "Exocet Blizzard Light", "Palatino Linotype", "Times", serif; }
+
 .bar .title {
   font: 25px "Exocet Blizzard Light", "Palatino Linotype", "Times", serif;
   line-height: 40px; }

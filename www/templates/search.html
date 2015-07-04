@@ -1,15 +1,13 @@
-<ion-view view-title="Heroes">
-    <ion-content>
-    <form ng-submit="DisplayProfile()">
-      <div class="list">
-        <label class="item item-input">
-          <span class="input-label">BattleTag</span>
-          <input type="text" ng-model="vm.battleTag">
-        </label>
-        <label class="item">
-          <button class="button button-block button-positive" type="submit">Submit</button>
-        </label>
-      </div>
-    </form>
-  </ion-content>
+<ion-view view-title="D3 Profile">
+    <ion-content class="search-view">
+        <form ng-submit="DisplayProfile()">
+            <div class="list">
+                <label class="item item-input">
+                    <span class="input-label">BattleTag</span>
+                    <input type="text" ng-model="vm.battleTag">
+                </label>
+                <button class="button button-block button-positive" type="submit">Search</button>
+            </div>
+        </form>
+    </ion-content>
 </ion-view>

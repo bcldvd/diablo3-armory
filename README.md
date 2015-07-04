@@ -38,6 +38,9 @@ gulp config
 ionic serve
 ```
 
+>:exclamation: **Note**: If you're having problems with the scss watch task, run the following
+>`sudo chown -R YOUR_USERNAME www/css`
+
 
 ## Authors
 
