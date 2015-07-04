@@ -38,11 +38,6 @@ gulp config
 ionic serve
 ```
 
->:exclamation: **Note**: I strongly recommend installing nodemon `sudo npm install -g nodemon`.
->It will monitor for any changes in your node.js
->application and automatically restart the server. Once installed, instead of `node app.js` use `nodemon app.js`.
->It is a big time saver in the long run.
-
 
 ## Authors
 
